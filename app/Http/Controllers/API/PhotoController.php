@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
 use App\Photo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PhotoController extends Controller
 {
@@ -13,19 +14,6 @@ class PhotoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return response()->json(['data' => [
-            ['id' => 1, 'title' => 'A'],
-            ['id' => 2, 'title' => 'B']
-        ]]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -48,17 +36,6 @@ class PhotoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Photo $photo)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Photo  $photo
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Photo $photo)
     {
         //
     }

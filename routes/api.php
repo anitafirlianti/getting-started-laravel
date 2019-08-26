@@ -18,6 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('photos', 'PhotoController')->except([
-    'create', 'store', 'update', 'destroy'
-]);
+Route::apiResource('photos', 'API\PhotoController');
